@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import random
+
 import requests
 import json
 import hashlib
@@ -77,13 +79,16 @@ def get_sleep_time():
 if __name__ == "__main__":
     # 最大运行出错次数
     fail_num = 3
+    run_step = random.randint(20000, 25000)
+    run_step2= random.randint(25000, 30000)
     while 1:
         while fail_num > 0:
             try:
                 # 修改步数结果
                 #result = LexinSport('18601237487', 'qwe123456', 65432).change_step()
-                result = LexinSport('18999922088', 'qq12345', 30001).change_step()
-                result = LexinSport('17738729557', '123456qwe', 33333).change_step()
+                result1 = LexinSport('18999922088', 'qq12345', run_step).change_step()
+                result = LexinSport('17738729557', '123456qwe', run_step2).change_step()
+                print(result1)
                 print(result)
                 break
             except Exception as e:
