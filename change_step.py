@@ -86,9 +86,9 @@ if __name__ == "__main__":
             try:
                 # 修改步数结果
                 #result = LexinSport('18601237487', 'qwe123456', 65432).change_step()
-                result1 = LexinSport('18999922088', 'qq12345', run_step).change_step()
+                #result1 = LexinSport('18999922088', 'qq12345', run_step).change_step()
                 result = LexinSport('17738729557', '123456qwe', run_step2).change_step()
-                print(result1)
+                #print(result1)
                 print(result)
                 break
             except Exception as e:
