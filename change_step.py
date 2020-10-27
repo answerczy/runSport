@@ -79,7 +79,7 @@ def get_sleep_time():
 if __name__ == "__main__":
     # 最大运行出错次数
     fail_num = 3
-    run_step = random.randint(20000, 25000)
+    #run_step = random.randint(20000, 25000)
     run_step2= random.randint(25000, 30000)
     while 1:
         while fail_num > 0:
